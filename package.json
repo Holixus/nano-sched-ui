@@ -1,7 +1,7 @@
 {
   "name": "nano-sched-ui",
-  "version": "1.0.3",
-  "description": "JSON parsing and stringifying nano-sched plugin",
+  "version": "1.0.4",
+  "description": "'nano-sched' plugin for parse, generate, validate UI-text format",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter spec -u tdd",
