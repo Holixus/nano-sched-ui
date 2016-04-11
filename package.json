@@ -1,0 +1,35 @@
+{
+  "name": "nano-sched-ui",
+  "version": "1.0.3",
+  "description": "JSON parsing and stringifying nano-sched plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec -u tdd",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot -u tdd",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot -u tdd"
+  },
+  "dependencies": {
+    "nano-ui-parser": "1",
+    "nano-ui-scheme": "1"
+  },
+  "devDependencies": {
+    "core-assert": "0",
+    "clone": "1",
+    "nano-timer": "1",
+    "nano-promise": "1",
+    "mocha": "2",
+    "colors": "0",
+    "istanbul": "0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holixus/nano-sched-ui.git"
+  },
+  "keywords": [],
+  "author": "Vladimir Antonov <me@holix.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Holixus/nano-sched-ui/issues"
+  },
+  "homepage": "https://github.com/Holixus/nano-sched-ui#readme"
+}
