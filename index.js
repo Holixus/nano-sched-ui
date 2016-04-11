@@ -32,7 +32,6 @@ module.exports = {
 		if (!opts.ui_schemes)
 			opts.ui_schemes = {};
 		opts.ui_schemes[data.id] = scheme;
-		//log.msg('s', 'scheme %s created', data.id);
 	},
 
 	'validate': function sync(log, data) {

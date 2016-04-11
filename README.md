@@ -10,6 +10,49 @@
 # nano-sched-ui
 'nano-sched' plugin for parse, generate, validate UI-text format
 
+## ui.parse(log, data)
+
+* data Object
+   * encoding `String` = 'utf8'
+   * content `String`
+* result data Object
+   * encoding `String` = 'ui-tree'
+   * content `Object`
+
+Converts UI-source into UI-tree.
+
+## ui.stringify(log, data)
+
+* data Object
+   * encoding `String` = 'ui-tree'
+   * content `Object`
+* result data Object
+   * encoding `String` = 'utf8'
+   * content `String`
+
+Converts UI-tree into UI-source text
+
+## ui.to-scheme(log, data)
+
+* data Object
+   * opts `Object`
+   * encoding `String` = 'ui-tree'
+   * content `Object`
+   * id `String` -- scheme identifier
+
+Compiles and saves UiScheme Object into `opts.ui_schemes[id]`
+
+## ui.validate(log, data)
+
+* data Object
+   * opts `Object`
+      * ui_schemes `Object`
+   * encoding `String` = 'ui-tree'
+   * content `Object`
+   * scheme `String` -- scheme identifier
+
+Validates ui-tree according to `opts.ui_schemes[data.scheme]` ui-scheme and translates all nodes args properties into objects with parsed arguments.
+
 
 [bithound-image]: https://www.bithound.io/github/Holixus/nano-sched-ui/badges/score.svg
 [bithound-url]: https://www.bithound.io/github/Holixus/nano-sched-ui
